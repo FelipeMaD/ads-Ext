@@ -34,8 +34,12 @@ ALLOWED_HOSTS = ['*']
 
 APPS = [ 
     'django_filters',
-    'ads_Site',
     'rest_framework',
+    'disciplinas',
+    'documentacoes',
+    'extensoes',
+    'monitorias',
+    'projetos',
 ]
 
 INSTALLED_APPS = [

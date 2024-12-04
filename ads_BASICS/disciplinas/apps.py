@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ProjetosConfig(AppConfig):
+class DisciplinasConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'projetos'
+    name = 'disciplinas'
