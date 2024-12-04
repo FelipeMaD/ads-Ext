@@ -1,7 +1,6 @@
-from django.contrib import admin
 from django.urls import path
-from homeAds import urls
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('home/', views.homepage, name='home'),  # Removida a barra inicial
 ]

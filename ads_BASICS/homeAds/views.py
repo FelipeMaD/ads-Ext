@@ -4,5 +4,5 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def contato(request):
-    return render(request, 'contato.html')
+def homepage(request):
+    return render(request, 'index.html')

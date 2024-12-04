@@ -1,15 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/media-query.css" />
-    <link
-      rel="shortcut icon"
-      href="./src/assets/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/media-query.css' %}" />
+    <link rel="shortcut icon" href="{% static 'assets/favicon.ico' %}" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,7 +16,7 @@
   <body>
     <header class="header">
       <a href="#" class="logo">
-        <img src="./src/assets/logo.png" alt="" />
+        <img src="{% static 'assets/logo.png' %}" alt="Logo ADS" />
         ADS
       </a>
 
@@ -45,11 +42,11 @@
     <div class="header header-nav">
       <nav class="navbar">
         <a href="#home">Início</a>
-        <a href="./src/pages/extensions.html">Extensões</a>
-        <a href="./src/pages/projects.html">Projetos</a>
-        <a href="./src/pages/documentations.html">Documentações</a>
-        <a href="./src/pages/disciplines.html">Disciplinas</a>
-        <a href="./src/pages/monitarians.html">Monitorias</a>
+        <a href="{% static 'pages/extensions.html' %}">Extensões</a>
+        <a href="{% static 'pages/projects.html' %}">Projetos</a>
+        <a href="{% static 'pages/documentations.html' %}">Documentações</a>
+        <a href="{% static 'pages/disciplines.html' %}">Disciplinas</a>
+        <a href="{% static 'pages/monitarians.html' %}">Monitorias</a>
       </nav>
     </div>
 
@@ -83,7 +80,7 @@
 
     <section class="registration">
       <a
-        href="./src/files/matriz_curricular.pdf"
+        href="{% static 'files/matriz_curricular.pdf' %}"
         target="_blank"
         class="registration-link"
       >
@@ -92,210 +89,33 @@
       </a>
     </section>
 
-    <section class="information">
-      <div class="info-left">
-        <div class="info-1">
-          <span class="fa-solid fa-dollar-sign info-bold"></span>
-          <span class="info-bold">Matrícula:</span>
-          <span>R$ 688,00</span>
-        </div>
-        <div class="info-2">
-          <span class="fa-solid fa-dollar-sign info-bold"></span>
-          <span class="info-bold">Mensalidade:</span>
-          <span>R$ 670,00</span>
-        </div>
-        <div class="info-3">
-          <span class="fa-regular fa-clock info-bold"></span>
-          <span class="info-bold">Turno:</span>
-          <span>Noturno</span>
-        </div>
-        <div class="info-4">
-          <span class="fas fa-graduation-cap info-bold"></span>
-          <span class="info-bold">Duração:</span>
-          <span>2 anos e meio</span>
-        </div>
-      </div>
-      <div class="info-right">
-        <div class="info-5">
-          <span class="fas fa-map-marker-alt info-bold"></span>
-          <span class="info-bold">Local:</span>
-          <span>Patos, Brasil</span>
-        </div>
-        <div class="info-6">
-          <span class="fa-solid fa-book info-bold"></span>
-          <span class="info-bold">Coordenador:</span>
-          <span>Sormany Silva Dantas</span>
-        </div>
-        <div class="info-7">
-          <span class="fa-solid fa-envelope info-bold"></span>
-          <span class="info-bold">Email:</span>
-          <span>coordenacao@ads.fiponline.edu.br</span>
-        </div>
-        <div class="info-8">
-          <span class="fa-solid fa-mobile info-bold"></span>
-          <span class="info-bold">Contado:</span>
-          <span>(83) 3421-4047</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="inscription">
-      <a
-        href="https://www.studus.com.br/StudusFIP/inscricaoonline/inscricaoonline.xhtml?curso=ADS"
-        target="_blank"
-        class="inscription-link"
-      >
-        <span class="fa-regular fa-pen-to-square inscription-icon"></span>
-        Faça já sua inscrição
-      </a>
-    </section>
-
-    <section class="embed-video">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/iYg5at4OXiE?si=fSIppt9hkliDTPkW"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </section>
-
+    <!-- Outras seções -->
     <section class="areas-activity">
-      <section class="carrossel-container">
-        <h1 class="heading">
-          Área
-          <span>Atuação</span>
-        </h1>
-        <div class="carrossel">
-          <div class="carousel-item">
-            <img
-              src="./src/assets/areas-activity/image-1.png"
-              alt="Analista de Sistemas"
-            />
-            <h3>Analista de sistemas</h3>
-            <p>
-              Profissional que analisa e desenvolve softwares e programas.
-              Mapeia processos e realiza modelagem de dados, visando estudar e
-              implementar sistemas.
-            </p>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./src/assets/areas-activity/image-2.png"
-              alt="Gestor de Projetos"
-            />
-            <h3>Gestor de projetos de sistemas</h3>
-            <p>
-              Faz a interligação entre a administração da empresa e a área de
-              computação.
-            </p>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./src/assets/areas-activity/image-3.png"
-              alt="Técnico de Desenvolvimento"
-            />
-            <h3>Técnico de desenvolvimento de softwares e aplicativos</h3>
-            <p>Elabora programas e jogos para computadores e celulares.</p>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./src/assets/areas-activity/image-4.png"
-              alt="Gerente de Projetos"
-            />
-            <h3>Gerente de projetos de sistemas</h3>
-            <p>É responsável por gerenciar o projeto em todos seus estágios.</p>
-          </div>
+      <h1 class="heading">Área <span>Atuação</span></h1>
+      <div class="carrossel">
+        <div class="carousel-item">
+          <img
+            src="{% static 'assets/areas-activity/image-1.png' %}"
+            alt="Analista de Sistemas"
+          />
+          <h3>Analista de sistemas</h3>
+          <p>Profissional que analisa e desenvolve softwares e programas.</p>
         </div>
-      </section>
-    </section>
-
-    <section class="professional-profile">
-      <h1 class="heading">
-        Perfil
-        <span>Profissional</span>
-      </h1>
-      <p>
-        O profissional formado em Análise e Desenvolvimento de Sistemas é capaz
-        de analisar, projetar, desenvolver, implementar e manter sistemas de
-        informação, com conhecimentos de programação, banco de dados, redes,
-        engenharia de software, sistemas operacionais, entre outros.
-      </p>
-      <div class="box-container">
-        <a href="#" class="links">
-          <i class="fas fa-arrow-right"></i>Análise de Requisitos</a
-        >
-        <a href="#" class="links"
-          ><i class="fas fa-arrow-right"></i>Modelagem de Sistemas</a
-        >
-        <a href="#" class="links"
-          ><i class="fas fa-arrow-right"></i>Desenvolvimento e Integração</a
-        >
-        <a href="#" class="links"
-          ><i class="fas fa-arrow-right"></i>Testes e Qualidade</a
-        >
-        <a href="#" class="links"
-          ><i class="fas fa-arrow-right"></i>Suporte e Manutenção</a
-        >
-        <a href="#" class="links"
-          ><i class="fas fa-arrow-right"></i>Banco de Dados</a
-        >
+        <!-- Adicionar os demais itens do carrossel -->
       </div>
     </section>
 
-    <section class="curriculum">
-      <h1 class="heading">
-        Estrutura
-        <span>Curricular</span>
-      </h1>
-      <p>
-        A estrutura curricular do curso de Análise e Desenvolvimento de Sistemas
-        é composta por disciplinas que abordam conteúdos de programação, banco
-        de dados, redes, engenharia de software, sistemas operacionais, entre
-        outros. <br />
-        Confira algumas disciplinas do curso:
-      </p>
-      <div class="box-container">
-        <div class="box">
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Algoritmos e Lógica de
-            Programação</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Arquitetura de Computadores</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Comunicação e Expressão</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Empreendedorismo</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Matemática Discreta</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-arrow-right"></i>Metodologia Científica</a
-          >
-        </div>
-      </div>
-    </section>
-
+    <!-- Footer -->
     <section class="footer">
       <div class="box-container">
         <div class="box">
           <h3>
             <div class="logo">
               ADS
-              <img class="icon-logo" src="./src/assets/logo.png" alt="" />
+              <img class="icon-logo" src="{% static 'assets/logo.png' %}" alt="Logo" />
             </div>
           </h3>
-          <p>
-            Quer conhecer mais sobre nosso cotidiano? Acesse nossas redes
-            sociais.
-          </p>
+          <p>Quer conhecer mais sobre nosso cotidiano? Acesse nossas redes sociais.</p>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-x"></a>
@@ -303,53 +123,7 @@
             <a href="#" class="fab fa-linkedin"></a>
           </div>
         </div>
-
-        <div class="box">
-          <h3>Informações de contato</h3>
-          <a href="#" class="links"
-            ><i class="fas fa-phone"></i>(83) 3421-4047</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-phone"></i>(83) 3421-4047</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-envelope"></i>coordenacao@ads.fiponline.edu.br</a
-          >
-          <a href="#" class="links"
-            ><i class="fas fa-map-marker-alt"></i>Patos, Brasil - 58704-440</a
-          >
-        </div>
-
-        <div class="box">
-          <h3>Links rápidos</h3>
-          <a href="./index.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Início</a
-          >
-          <a href="./src/pages/extensions.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Extensões</a
-          >
-          <a href="./src/pages/projects.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Projetos</a
-          >
-          <a href="./src/pages/documentations.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Documentação</a
-          >
-          <a href="./src/pages/disciplines.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Disciplinas</a
-          >
-          <a href="./src/pages/monitarians.html" class="links"
-            ><i class="fas fa-arrow-right"></i>Monitorias</a
-          >
-        </div>
-
-        <div class="box">
-          <h3>Boletim de notícias</h3>
-          <p>Inscreva-se para receber as últimas atualizações</p>
-          <input type="email" placeholder="seu email" class="email" />
-          <input type="submit" value="inscreva-se" class="btn" />
-        </div>
       </div>
-
       <div class="credit">
         Criado pelos alunos de <span>ADS</span> | todos os direitos reservados!
       </div>
